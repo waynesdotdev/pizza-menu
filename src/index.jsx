@@ -1,9 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import { Header } from './Header'
-import { Menu } from './Menu'
-import { Footer } from './Footer'
+import { App } from './App'
 
 export const pizzaData = [
   {
@@ -49,16 +47,6 @@ export const pizzaData = [
     soldOut: false,
   },
 ]
-
-function App() {
-  return (
-    <div className='container'>
-      <Header />
-      <Menu />
-      <Footer />
-    </div>
-  )
-}
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
